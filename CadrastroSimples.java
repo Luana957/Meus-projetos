@@ -1,4 +1,4 @@
-public class Main {
+public class CadrastroSimples {
     public static void main(String[] args) {
 
         String nome = "Luana Estéfany";
