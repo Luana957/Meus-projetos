@@ -1,0 +1,98 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h3{
+    color: #6324cf;
+}
+
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit:cover;
+  box-shadow: 0px 0px 10px purple;
+}
+
+header {
+    background-color: #1b022c;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 100px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.menu{
+    background-color: rgb(100, 18, 133);
+    display:flex;
+    gap: 20px;
+    height: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding-top: 7px;
+    padding-bottom: 2px;
+    justify-content: center;
+    
+   
+    
+}
+
+
+
+a{
+      color: #9f69f0 ;
+    
+     text-decoration: none;
+}
+
+ a:hover{
+  
+  color: #6324cf;
+}
+.interesses ul{
+    text-align: center;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+img{
+    width:400px;
+    height: 300px;
+}
+
+
+button{
+    color: #f4f4f4;
+    background-color: rgb(132, 33, 145);
+    border-radius: 8px;
+    width: 100px;
+    height: 40px;
+}
+
+footer {
+    background-color:#350753;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    
+  
+}
