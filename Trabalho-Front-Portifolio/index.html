@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!--Link do Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+
+  <!--Seção Cabeçario (Menu)-->
+<section>
+    <header>
+        <header>
+        <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <img src="./imagem/Logo-da-equipe.png" width="80" alt="">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#tecnologias">Tecnologias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#equipe">Equipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contatos">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active btn btn-success" aria-current="page" href="projetos.html">Projetos</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <button  id="VerificarButton" class="btn btn-secondary" aria-label="Alternar entre modo claro e escuro">
+                                <i class="bi bi-moon-fill"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+   </header>
+</section>
+
+<!--Secao principal Carrosel-->
+<section class="my-5">
+ <main>  
+    <div id="carouselExampleAutoplaying" class="carousel slide w-50 mx-auto" data-bs-ride="carousel">
+  <div class="carousel-inner" style="box-shadow:5px 5px 5px rgb(80, 167, 84);">
+    <div class="carousel-item active">
+      <img src="./imagem/macxinus-carrossel.jpg" width="100" height="400" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imagem/deipoimentos.jpg"  width="100" height="400" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./imagem/estrelas.jpg"  width="100" height="400" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+
+
+    <!--Seção de Tecnologia-->
+
+  <section id="tecnologias" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Tecnologias em Destaque</h2>
+            
+            <div class="row text-center">
+                
+                <div class="col-12 col-md-4 col-lg-2">
+                    <div class="tech-icon-box">
+                       <h4 class="h5"><img src="../Trabalho-Front-Portifolio/imagem/JavaScript1.png" class="img-fluid" alt="Descrição da Imagem"></h4>
+                        <p class="text-muted small">A base para o desenvolvimento front-end e back-end moderno.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-2">
+                    <div class="tech-icon-box">
+                        <h4 class="h5"><img src="../Trabalho-Front-Portifolio/imagem/React.png" class="img-fluid" alt="Descrição da Imagem"></h4>
+                        <p class="text-muted small">Biblioteca para construir interfaces de usuário interativas.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-2">
+                    <div class="tech-icon-box">
+                        <h4 class="h5"><img src="./imagem/node-js.png"  class="img-fluid"  alt=""></h4>
+
+                        <p class="text-muted small">Ambiente de execução para código JavaScript no servidor.</p>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-2">
+                    <div class="tech-icon-box">
+                        <h4 class="h5"><img src="./imagem/python.png"  class="img-fluid" alt=""></h4>
+                        <p class="text-muted small">Linguagem versátil para ciência de dados e backend.</p>
+                    </div>
+                </div>
+                
+                 <div class="col-12 col-md-6 col-lg-2">
+                    <div class="tech-icon-box">
+                        <h4 class="h5"><img src="./imagem/docker.png"  class="img-fluid" alt=""></h4>
+                        <p class="text-muted small">Conteinerização para implantar aplicações de forma eficiente.</p>
+                    </div>
+                </div>
+
+            </div> </div> </section>
+
+
+
+     <!--Seção de equipe--> 
+
+  <section class="py-5" id="equipe">
+    <div class="container">
+        <h2 class="text-center mb-5">Equipe</h2>
+        
+        <div class="row g-4 justify-content-center"> 
+            
+            <div class="col-12 col-md-6 col-lg-4"> 
+                <div class="card h-100"> 
+                    <img src="./imagem/Luana.jpg" class="card-img-top" alt="Foto de Luana">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Luana Santos</h5>
+                        <p class="card-subtitle text-muted mb-2">Desenvolvedora Full-Stack Sênior</p>
+                        <p class="card-text">Apaixonado por criar interfaces intuitivas e acessíveis. Domínio em Figma e Adobe XD, garantindo a melhor experiência do usuário em todos os nossos produtos.</p>
+                        <a href="#" class="btn btn-primary">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4"> 
+                <div class="card h-100">
+                    <img src="./imagem/joao-mendes.jpg" class="card-img-top" alt="Foto de João">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">João Mendes</h5>
+                        <p class="card-subtitle text-muted mb-2">Especialista em UI/UX Design</p>
+                        <p class="card-text">Apaixonado por criar interfaces intuitivas e acessíveis. Domínio em Figma e Adobe XD, garantindo a melhor experiência do usuário em todos os nossos produtos.</p>
+                        <a href="#" class="btn btn-primary">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4"> 
+                <div class="card h-100">
+                    <img src="./imagem/ana.jpg" class="card-img-top" alt="Foto de João">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ana Costa</h5>
+                        <p class="card-subtitle text-muted mb-2">Analista de Dados & Business Intelligence</p>
+                        <p class="card-text">Responsável por transformar dados brutos em insights estratégicos. Proficiência em Python, SQL e visualização de dados (Power BI/Tableau).</p>
+                        <a href="#" class="btn btn-primary">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+              <div class="col-12 col-md-6 col-lg-4"> 
+                <div class="card h-100">
+                    <img src="./imagem/ricardo.jpg" class="card-img-top" alt="Foto de João">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ricardo Melo</h5>
+                        <p class="card-subtitle text-muted mb-2">Engenheiro DevOps & Cloud Specialist</p>
+                        <p class="card-text">Garante a estabilidade e a entrega contínua dos nossos sistemas. Experiência com AWS, Docker, Kubernetes e CI/CD.</p>
+                        <a href="#" class="btn btn-primary">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-12 col-md-6 col-lg-4"> 
+                <div class="card h-100">
+                    <img src="./imagem/carla.jpg" class="card-img-top" alt="Foto de João">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Carla Souza</h5>
+                        <p class="card-subtitle text-muted mb-2">Gerente de Projetos Certificada (PMP)</p>
+                        <p class="card-text">Responsável por planejar e executar projetos dentro do prazo e orçamento. Especialista em metodologias Ágeis (Scrum) e gestão de riscos.</p>
+                        <a href="#" class="btn btn-primary">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-12 col-md-6 col-lg-4"> 
+                <div class="card h-100">
+                    <img src="./imagem/felipe.jpg" class="card-img-top" alt="Foto de João">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Felipe Rocha</h5>
+                        <p class="card-subtitle text-muted mb-2">Engenheiro de Segurança da Informação</p>
+                        <p class="card-text">Garante a proteção dos dados e sistemas da empresa contra ameaças cibernéticas. Especialidade em testes de penetração e compliance LGPD.</p>
+                        <a href="#" class="btn btn-primary">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            </div>
+    </div>
+</section>
+  
+
+
+
+<!--Seção De Contatos-->
+
+<section class="py-5 mt-5" id="contatos">
+    <div class="container" >
+        <h2 class="text-center mb-5">Contatos</h2>
+        <div class="mb-3">
+
+          <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Maria">
+
+          <label for="exampleFormControlInput1" class="form-label">Email:</label>
+     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+   </div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Mensagem:</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+  <h5>Clique abaixo nesse link para  Whatsapp</h5>
+  <a href="https://www.whatsapp.com"class="whatsapp-link" style="color: rgb(35, 207, 35);">whatsapp</a>
+  <button type="button"  class="btn  btn-success  mt-5  w-100">Enviar</button>
+</div>
+
+ </div>
+</section>
+        
+
+  
+ <!--Secao Botao oculto-Tem elemento ocultos-->
+<section>
+  <div  class="container-do-botao text-center p-5">
+    <button id="toggleButton">Outros Contatos</button>
+
+    <div id="conteudoOculto" class="conteudo-secreto">
+        <h5>Whatsapp clique abaixo</h5>
+        <a href="https://www.whatsapp.com">Whatsapp</a>
+        <h5>Instragram</h5>
+        <a href="https://www.instagram.com/">Instragram</a>
+    </div>
+  </div>    
+e</section>
+
+   
+
+</main> 
+  
+ <!--Seção roda pe-->
+  <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2025 Macximus. Todos os direitos reservados.</p>
+            <small>
+                <a href="#" class="text-white mx-2 text-decoration-none">Política de Privacidade</a> | 
+                <a href="#" class="text-white mx-2 text-decoration-none">Termos de Uso</a>
+            </small>
+        </div>
+    </footer>
+
+
+
+
+        
+
+     <!--Link do Javascript-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="script.js"></script>
+    
+</body>
+    </html>
