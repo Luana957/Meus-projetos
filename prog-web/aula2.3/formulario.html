@@ -1,0 +1,36 @@
+<!--3- Crie um formulário HTML que permita ao usuário inserir o valor
+total de uma compra, o número de parcelas e a taxa de juros
+mensal. O sistema deve calcular e exibir o valor de cada parcela e
+o valor total a ser pago (valor da compra + juros). O resultado
+deve ser exibido na mesma página.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo de Formulário com JavaScript</title>
+<script src="script.js" defer></script>
+</head>
+<body>
+<h1>Calculadora</h1>
+<form id="numeroForm">
+<label for="numero">Digite um número total da compra:</label>
+<input type="number" id="numero" name="numero"  step="0.01" required> 
+
+<label for="numero">Digite um número total da parcela:</label>
+<input type="number" id="numero1" name="numero1" min="1" required>
+
+<label for="numero">Digite um número taxa da parcela:</label>
+<input type="number" id="numero2" name="numero2" required>
+
+
+<h2>resultado:</h2>
+
+
+<button type="submit">Calcular</button>
+</form>
+<p>O resultado é: <span id="resultado"></span></p>
+</body>
+</html>
+

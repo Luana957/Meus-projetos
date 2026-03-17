@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sistema de Vendas</title>
+    </head>
+    <body>
+    
+        <h2>Cadastro de Vendas</h2>
+        
+        <input type="text" id="vendedor" placeholder="Nome do Vendedor">
+        <input type="number" id="valorVenda" placeholder="Valor da Venda">
+        <button onclick="cadastrarVenda()">Cadastrar Venda</button>
+    
+        <table border="1" style="margin-top: 20px; width: 100%;">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Vendedor</th>
+                    <th>Valor Original</th>
+                    <th>Com Desconto (10%)</th>
+                    <th>Data/Hora</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela">
+                </tbody>
+        </table>
+    
+        <div id="info" style="margin-top: 10px; font-weight: bold;"></div>
+    
+        <script>
+            // 1. O VETOR VAZIO (Onde ficam os dados)
+            let vendas = [];
+            let contadorId = 1; // Controla o ID para nunca repetir
+    
+            // 2. FUNÇÃO QUE MOSTRA NA TELA
+            function atualizarTela() {
+                const tabela = document.getElementById('corpoTabela');
+                const info = document.getElementById('info');
+                
+                // LIMPA A TABELA ANTES DE MOSTRAR (Importante para não duplicar)
+                tabela.innerHTML = '';
+                
+                if (vendas.length === 0) {
+                    tabela.innerHTML = '<tr><td colspan="6">Nenhuma venda.</td></tr>';
+                    info.innerHTML = 'Total: R$ 0,00';
+                    return;
+                }
+    
+                let somaTotal = 0;
+    
+                // Percorre o vetor e cria as linhas
+                for (let i = 0; i < vendas.length; i++) {
+                    const v = vendas[i];
+                    somaTotal += v.valorComDesconto;
+    
+                    const linha = document.createElement('tr');
+                    linha.innerHTML = `
+                        <td>${v.id}</td>
+                        <td>${v.vendedor}</td>
+                        <td>R$ ${v.valorBruto.toFixed(2)}</td>
+                        <td>R$ ${v.valorComDesconto.toFixed(2)}</td>
+                        <td>${v.data}</td>
+                        <td><button onclick="removerVenda(${v.id})">Excluir</button></td>
+                    `;
+                    tabela.appendChild(linha);
+                }
+    
+                info.innerHTML = `Total de Vendas: R$ ${somaTotal.toFixed(2)}`;
+            }
+    
+            // 3. FUNÇÃO PARA CADASTRAR (ADICIONAR NO VETOR)
+            function cadastrarVenda() {
+                const inputNome = document.getElementById('vendedor');
+                const inputValor = document.getElementById('valorVenda');
+    
+                // Se estiver vazio, não faz nada
+                if (inputNome.value === "" || inputValor.value === "") {
+                    alert("Preencha o nome e o valor!");
+                    return;
+                }
+    
+                const valorOriginal = parseFloat(inputValor.value);
+                const valorFinal = valorOriginal * 0.90; // Aplica 10% de desconto
+    
+                // Cria o objeto
+                const novaVenda = {
+                    id: contadorId++, // Pega o número atual e soma 1 para o próximo
+                    vendedor: inputNome.value,
+                    valorBruto: valorOriginal,
+                    valorComDesconto: valorFinal,
+                    data: new Date().toLocaleString('pt-BR')
+                };
+    
+                // Coloca no vetor (PUSH)
+                vendas.push(novaVenda);
+    
+                // Limpa os campos de texto
+                inputNome.value = "";
+                inputValor.value = "";
+                inputNome.focus();
+    
+                // CHAMA A FUNÇÃO PARA MOSTRAR NA TELA
+                atualizarTela();
+            }
+    
+            // 4. FUNÇÃO PARA REMOVER
+            function removerVenda(idParaExcluir) {
+                // Filtra o vetor: mantém todo mundo que NÃO tem o ID que eu cliquei
+                vendas = vendas.filter(v => v.id !== idParaExcluir);
+                
+                // Atualiza a tela depois de remover
+                atualizarTela();
+            }
+    
+            // Inicia a tela limpa
+            atualizarTela();
+    
+        </script>
+      
+      <script src="vendas.js"></script>
+    </body>
+    </html>
