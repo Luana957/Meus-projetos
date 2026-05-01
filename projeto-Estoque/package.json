@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "name": "meus-projetos",
+  "version": "1.0.0",
+  "description": "Contém meus projetos",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luana957/Meus-projetos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Luana957/Meus-projetos/issues"
+  },
+  "homepage": "https://github.com/Luana957/Meus-projetos#readme"
+}
